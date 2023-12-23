@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   
+    background: url(https://media.istockphoto.com/id/1335536410/pt/vetorial/surreal-curved-landscape-fairy-forest.jpg?s=612x612&w=0&k=20&c=g_C825jphBEhxI3lF7JF6TBOWE2kuGp8jIzz0GBzaWM=) no-repeat right top fixed;
+    
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    font-family: 'Rowdies', sans-serif;
+    
+    
+}
+
+ .start {
+    display: flex;
+    font-size: 45px;
+    justify-content:right;
+    text-align: center;
+     padding: 10px;
+     align-items: flex-start;
+     color: rgb(255, 251, 0);
+
+     
+    
+} 
+
+a {
+    width: 250px;
+    display:flex;
+    cursor: pointer;
+    align-self: center;
+    justify-content: center;
+    
+}
+
+.cap {
+    width: 350px;
+    animation: float 3s ease-in-out infinite;
+    display: flex;
+    align-self: flex-end;
+    order: 1;
+}
+
+div.pre-carregamento {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(138, 0, 180);
+
+
+    transition: 15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+
+div.efeito-carregamento {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 100%;
+
+    animation: efeito 0.5s infinite;
+}
+
+@keyframes efeito {
+    0%{
+        box-shadow: 0 0 0 0 white;
+    }
+
+    100%{
+        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+
+

@@ -1,0 +1,90 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(https://media.istockphoto.com/id/1368060310/pt/vetorial/magic-mushrooms-seamless-pattern-psychedelic-hallucination-vintage-psychedelic-textile.jpg?s=612x612&w=0&k=20&c=cdZlVffAnL2HWXRWELSXn4mkLOAtc49W8RTslf5tDQ8=);
+    font-family: 'Rowdies', sans-serif;
+}
+
+
+.interrogacao{
+    float: right;
+   width: 80px;
+   cursor: help;
+}
+
+/* botão voltar */
+
+.voltar{
+    background-color: antiquewhite;
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  .voltar span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .voltar:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff00d4;
+    transition: all .35s;
+  }
+  
+  .voltar:hover{
+    color: #fff;
+  }
+  
+  .voltar:hover:after{
+    width: 100%;
+  }
+/* fim do botão voltar */
+
+
+/* botao clique */
+ button{
+    float: right;
+ }
+
+
+/* fim do botao clique */
+
+h1 {
+    color: azure;
+    font-size: 80px;
+    text-align: center;
+    background-color: rgba(255, 1, 234, 0.808);
+
+}
+
+h2 {
+    font-weight:900;
+    font-size: 18px;
+    color: rgb(255, 237, 133);
+    background-color: blueviolet; border-radius: 55px;
+}
+
+section {
+    background-color: rgba(137, 43, 226, 0.288);
+    display: flex;
+    border-radius: 55px;
+    justify-content: center;
+    text-align: center;
+    z-index: 555px;
+}
